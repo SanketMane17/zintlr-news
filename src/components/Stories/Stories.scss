@@ -36,6 +36,11 @@
         top: 0;
         left: -2px;
         display: flex;
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
 
         .item {
             width: 100% !important;
