@@ -10,7 +10,7 @@ function App() {
   const getNews = async (category) => {
     try {
       let url = category === "All" ?
-        "https://newsapi.org/v2/top-headlines?country=us&apiKey=9e8195575c60467dab6ca82ab71f06ac" :
+        "https://newsapi.org/v2/top-headlines?country=de&apiKey=9e8195575c60467dab6ca82ab71f06ac" :
         `https://newsapi.org/v2/top-headlines?country=us&category=${category}&apiKey=9e8195575c60467dab6ca82ab71f06ac`;
 
       const response = await fetch(url);

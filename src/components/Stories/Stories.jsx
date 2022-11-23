@@ -54,24 +54,21 @@ function Stories({ news, category, setCategory, toggle, setToggle }) {
         ))}
       </div>
 
-      <button 
-      className='explore'
-      onClick={() => setToggle(true)}
+      <button
+        className='explore'
+        onClick={() => setToggle(true)}
       >
         <TbWorldUpload size={18} style={{ marginRight: "2px" }} />
         Explore
       </button>
       <div className="animatedStories">
-        {toggle && news.map((item, index) => {
-          if (index === 0)
-            return <StoryCard
-              item={item}
-              key={index}
-              category={category}
-              toggle={toggle}
-              setToggle={setToggle}
-            />
-        })}
+        {toggle && news.map((item, index) => (index === 0 && <StoryCard
+          item={item}
+          key={index}
+          category={category}
+          toggle={toggle}
+          setToggle={setToggle}
+        />))}
       </div>
     </div>
   )
