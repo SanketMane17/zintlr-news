@@ -1,0 +1,22 @@
+.app__header {
+    padding: 0 10px;
+    margin: 20px 0px;
+    display: flex;
+}
+
+.app__header-items {
+    display: flex;
+
+    @media screen and (min-width: 450px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    @media screen and (max-width: 500px) {
+        overflow-x: auto;
+
+        &::-webkit-scrollbar {
+            width: 0;
+        }
+    }
+}

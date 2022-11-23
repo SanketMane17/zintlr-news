@@ -1,0 +1,38 @@
+.app__navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5px 10px;
+}
+
+.app__navbar-hamburger {
+    cursor: pointer;
+
+    div {
+        width: 28px;
+        height: 4px;
+        background-color: #2C332E;
+        margin: 5px 0;
+        border-radius: 4px;
+
+        &:nth-child(3) {
+            width: 14px;
+        }
+    }
+}
+
+.app__navbar-logo {
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 15px;
+    color: #2C332E;
+}
+
+.app__navbar-search {
+    cursor: pointer;
+    svg {
+        color: #2C332E;
+    }
+}
